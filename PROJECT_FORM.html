@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
   <style>
- 
+    body{
+      background-image: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");
+      background-size: cover;
+      height: 300%;
+      padding:0;
+      margin:0;
+    }
+
     .signin-form {
-  font-family: "Bradley Hand ITC";
+  font-family: "Arial Rounded MT Bold";
   width:650px;
   margin:30px auto;
-  background:linear-grid(to right, #ad1fe0e5,);
+  color:#f3eded;
+  background:linear-grid(to right, #979297e5,);
   border-radius: 10px;
     }
    .form-header{
-    background-color:#ac17e263;
+    background-color:#252325c2;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
   }
   .form-header1{
     font-size: 30px;
 text-align:center;
-color:#0f0e0f ;
+color:#faf6fa ;
 padding:20px 0;
-border-bottom:1px solid #51108f;
+border-bottom:1px solid #0a0a0a;
   }
   .form-body {
     padding:10px 40px;
-    color:rgb(85, 24, 100);
+    color:rgb(250, 248, 250);
   }
   
   .form-group{
@@ -31,7 +39,7 @@ border-bottom:1px solid #51108f;
   }
   
   .form-body .label-title {
-    color:#682968;
+    color:#f3eded;
     font-size: 17px;
     font-weight: bold;
   }
@@ -44,12 +52,13 @@ border-bottom:1px solid #51108f;
       height: 34px;
       padding-left: 10px;
       padding-right: 10px;
-      color: #682968;
+      color: #f5f0f0;
       text-align: left;
-      border: 1px solid #51108f;
+      border: 1px solid #c1b8c9;
       border-radius: 4px;
-      background: rgb(198, 121, 235);
+      background: rgb(5, 5, 5);
       outline: none;
+  }
       </style>
   <head> <title>form page</title>
     </head>
@@ -94,7 +103,7 @@ border-bottom:1px solid #51108f;
       </div>
     
     </div>
-    <!-- Gender and Interoustss -->
+    <!-- Gender and Interest -->
 <div class="horizontal-group">
 
   <div class="form-group left">
@@ -108,7 +117,7 @@ border-bottom:1px solid #51108f;
     </div>
 
     <div class="form-group right">
-        <label class="label-title"></label>
+        <label class="label-title">Interests</label>
         <div>
             <label>
                 <input type="checkbox" value="Web"> Groceries</label>
@@ -144,7 +153,7 @@ border-bottom:1px solid #51108f;
         
         <div class="form-footer">
           <span>* required</span>
-  <button type="submit" class="btn">SUBMIT</button>
+  <button type="submit" class="btn">Sign up</button>
 
         </div>
 
