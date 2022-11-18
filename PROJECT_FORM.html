@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
   <style>
+    ::-webkit-input-placeholder { /* Edge */
+  color: rgb(245, 235, 235);
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: rgb(247, 242, 242);
+}
+
+::placeholder {
+  color: rgb(250, 245, 245);
+}
     body{
       background-image: url("https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif");
       background-size: cover;
@@ -65,41 +76,41 @@ border-bottom:1px solid #0a0a0a;
     
   
 
-  <body bgcolor="#F5C3F5 ">
+  <body bgcolor="WHITE">
     <form class="signin-form" action="_______"  method="post">
         <!--actin= where we send the form after submissin--> <!--method is how are you sending the data-->
        <div class="form-header"> 
-          <h1>LET'S GET YOU SETTLED</h1>
+          <h1> LET'S GET YOU SETTLED </h1>
         </div>
        
         
   <div class="form-body">
     <div class="horizontal-group">
       <div class="form-group left">
-        <lable for="firstname" class="lable-title">Last Name</lable>
+        <lable for="firstname" class="lable-title">FIRST NAME:</lable>
         <input type="text" id="firstname" class="form-input" placeholder="First Name" required="required"/>
       </div>
       <div class="form-group right">
-        <lable for="lastname" class="lable-title">Last Name</lable>
+        <lable for="lastname" class="lable-title">LAST NAME:</lable>
         <input type="'text" id="lastname" class="form-input" placeholder="Last Name"/>
       </div>
     </div>
     <!--e-mail-->
     <div class="form-group">
-      <label for="email" class="label-title">Email*</label>
-      <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+      <label for="email" class="label-title">EMAIL*</label>
+      <input type="email" id="email" class="form-input" placeholder="Enter Your Email" required="required">
     </div>
     <!--password-->
     <div class="horizontal-group">
 
       <div class="form-group left">
-        <label for="password" class="label-title">Password *</label>
+        <label for="password" class="label-title">PASSWORD *</label>
         <input type="password" id="password" class="form-input" placeholder="Password" required="required">
       </div>
     
       <div class="form-group right">
-        <label for="confirm-password" class="label-title">Confirm Password *</label>
-        <input type="password" class="form-input" id="confirm-password" placeholder="enter your password again" required="required">
+        <label for="confirm-password" class="label-title">CONFIRM PASSWORD *</label>
+        <input type="password" class="form-input" id="confirm-password" placeholder="Confirm Password" required="required">
       </div>
     
     </div>
@@ -107,7 +118,7 @@ border-bottom:1px solid #0a0a0a;
 <div class="horizontal-group">
 
   <div class="form-group left">
-      <label class="label-title">Gender:</label>
+      <label class="label-title">GENDER:</label>
       <div class="input-group">
           <label for="male">
               <input type="radio" name="gender" value="male" id="male"> Male</label>
@@ -117,7 +128,7 @@ border-bottom:1px solid #0a0a0a;
     </div>
 
     <div class="form-group right">
-        <label class="label-title">Interests</label>
+        <label class="label-title">INTERESTS:</label>
         <div>
             <label>
                 <input type="checkbox" value="Web"> Groceries</label>
@@ -135,19 +146,19 @@ border-bottom:1px solid #0a0a0a;
 <div class="horizontal-group">
 
   <div class="form-group left" >
-    <label for="choose-file" class="label-title">Upload Profile Picture</label>
+    <label for="choose-file" class="label-title">UPLOAD PROFILE PICTURE:</label>
     <input type="file" id="choose-file" size="80">
   </div>
   
   <div class="form-group right">
-    <label for="experience" class="label-title">Age</label>
+    <label for="experience" class="label-title">AGE:</label>
     <input type="number" min="18" max="80"  value="18" class="form-input">
   </div>
 
 </div>
 <!--Address-->
 <div class="form-group">
-  <label for="choose-file" class="label-title">ADDRESS</label>
+  <label for="choose-file" class="label-title">ADDRESS:</label>
   <textarea class="form-input" rows="4" cols="50"  height=auto placeholder="Address"></textarea>
 </div>
         
